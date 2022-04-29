@@ -23,4 +23,5 @@ sudo apt install python3-dev -y
 
 $DOT_FILES_PATH = $HOME/.dotfiles
 
+output "Clonning dotfiles at $DOT_FILES_PATH"
 git clone https://github.com/laryssonalves/dotfiles.git $DOT_FILES_PATH
