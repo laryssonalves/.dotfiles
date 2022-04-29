@@ -13,7 +13,7 @@ output "Installing -> oh-my-bash"
 curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh | bash
 
 output "Installing -> nvm"
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 output "Sourcing -> .profile .bashrc"
 source $HOME/.profile
