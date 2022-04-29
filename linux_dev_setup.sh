@@ -12,6 +12,9 @@ output "Installing -> oh-my-bash"
 curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh | bash
 source $HOME/.profile
 
+output "Installing -> nvm"
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
 output "Installing -> node yarn"
 nvm install --lts
 sudo apt install yarn -y
@@ -21,7 +24,5 @@ sudo apt install python3
 sudo apt install python3-venv -y
 sudo apt install python3-dev -y
 
-$DOT_FILES_PATH = $HOME/.dotfiles
-
-output "Clonning dotfiles at $DOT_FILES_PATH"
-git clone https://github.com/laryssonalves/dotfiles.git $DOT_FILES_PATH
+output "Clonning dotfiles at ${HOME}"
+git clone https://github.com/laryssonalves/dotfiles.git $HOME
