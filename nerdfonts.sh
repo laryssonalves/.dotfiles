@@ -1,10 +1,4 @@
 echo "Running nerdfonts.sh"
-echo
-echo "--------------------------------------------"
-echo "This script will install NerdFonts."
-echo "You may be prompted for sudo password."
-echo "--------------------------------------------"
-echo
 
 read -e -p "Install NerdFonts? [y/n] " INSTALLNF
 

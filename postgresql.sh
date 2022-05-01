@@ -1,10 +1,4 @@
 echo "Running postgresql.sh"
-echo
-echo "--------------------------------------------"
-echo "This script will install PostgreSQL."
-echo "You may be prompted for sudo password."
-echo "--------------------------------------------"
-echo
 
 read -e -p "Install PostgreSQL database? [y/n] " INSTALLPG
 

@@ -1,9 +1,9 @@
 echo "Running dev.sh"
 
-DOTFILES_PATH=~/.dotfiles                                                             # Repo path
-BASHRC_PATH=~/.bashrc                                                                 # Bash config path
-ALIASES_PATH=$DOTFILES_PATH/aliases.sh                                                # Aliases path
-OMB_URL=https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh # oh-my-bash url
+DOTFILES_PATH=~/.dotfiles
+BASHRC_PATH=~/.bashrc
+ALIASES_PATH=$DOTFILES_PATH/aliases.sh
+OMB_URL=https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh
 NVM_URL=https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
 
 echo "Updating -> distro"
@@ -46,5 +46,11 @@ bash $DOTFILES_PATH/postgresql.sh
 # Install nerdfonts
 bash $DOTFILES_PATH/nerdfonts.sh
 
+# Remove script 
+if [ -f dev.sh ]; then
+    rm dev.sh
+fi
+
 source $BASHRC_PATH
+
 echo "Please, source your .bashrc using -> source ~/.bashrc"
