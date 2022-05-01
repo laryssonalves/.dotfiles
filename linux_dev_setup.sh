@@ -1,7 +1,7 @@
 PURPLE="\033[0;35m" # Purple
 NC="\033[0m"        # No Color
-DOTFILES_PATH=~/.dotfiles # Repo path
-BASHRC_PATH=~/.profile # Bash config path
+DOTFILES_PATH=$HOME/.dotfiles # Repo path
+BASHRC_PATH=$HOME/.profile # Bash config path
 
 function output() {
   echo -e "${PURPLE}$1${NC}"
