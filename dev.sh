@@ -51,6 +51,4 @@ if [ -f dev.sh ]; then
     rm dev.sh
 fi
 
-source $BASHRC_PATH
-
 echo "Please, source your .bashrc using -> source ~/.bashrc"
