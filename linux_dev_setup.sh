@@ -33,10 +33,12 @@ nvm install --lts
 sudo apt install yarn -y
 
 output "Installing -> python and libs"
-sudo apt install python3
+sudo apt install python3 -y
 sudo apt install python3-venv -y
 sudo apt install python3-dev -y
 
 output "Installing -> postgresql"
-sudo apt install postgresql
+sudo apt install postgresql -y
 sudo service postgresql start
+
+output "Please, source your .bashrc using -> source ~/.bashrc"
