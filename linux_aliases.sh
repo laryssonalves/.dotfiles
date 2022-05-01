@@ -1,0 +1,1 @@
+alias bashconfig='nano ~/.bashrc'
