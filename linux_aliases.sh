@@ -1,5 +1,5 @@
 # General aliases
-alias bashconfig="nano ~/.bashrc"
+alias bashconfig="sudo nano ~/.bashrc"
 alias h="history"
 alias hg="history | grep"
 alias myip="curl http://ipecho.net/plain; echo"
