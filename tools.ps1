@@ -14,11 +14,4 @@ choco install notion -y
 choco install discord.install -y
 choco install slack -y
 
-Write-Output "Setting -> wsl"
-wsl --install
-wsl set-default-version 2
-wsl --update
-
-Write-Output ""
-wsl --install -d Ubuntu
 exit
