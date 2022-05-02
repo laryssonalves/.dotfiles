@@ -10,5 +10,5 @@ wget https://raw.githubusercontent.com/laryssonalves/.dotfiles/master/dev.sh && 
 # Windows
 To install windows tools run the following commands on your PowerShell
 ```powershell
-iwr -useb https://raw.github.com/laryssonalves/.dotfiles/master/tools.ps1 | iex
+iwr -useb https://raw.githubusercontent.com/laryssonalves/.dotfiles/master/tools.ps1 | iex
 ```
