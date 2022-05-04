@@ -31,6 +31,9 @@ echo "Installing -> aliases"
 echo -e "\n# Adding my custom aliases" | tee -a $BASHRC_PATH
 echo -e "source $ALIASES_PATH" | tee -a $BASHRC_PATH
 
+echo "Copying -> .gitconfig"
+cp $DOTFILES_PATH/.gitconfig ~/.gitconfig
+
 echo "Installing -> node yarn"
 nvm install --lts
 
