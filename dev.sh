@@ -33,7 +33,13 @@ echo -e "source $ALIASES_PATH" | tee -a $BASHRC_PATH
 
 echo "Installing -> node yarn"
 nvm install --lts
-sudo apt install yarn -y
+
+# Remove cmdtest pro tinstall right yarn
+if command -v cmdtest &> /dev/null; then
+  sudo apt remove cmdtest
+fi
+
+npm install -g yarn
 
 echo "Installing -> python and libs"
 sudo apt install python3 -y

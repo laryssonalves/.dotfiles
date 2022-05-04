@@ -1,0 +1,7 @@
+[core]
+  editor = "code --wait"
+[user]
+  name = Larysson Alves
+  email = 36169516+laryssonalves@users.noreply.github.com
+[init]
+  defaultBranch = master
